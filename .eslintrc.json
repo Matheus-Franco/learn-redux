@@ -44,7 +44,8 @@
       "prettier/prettier": "error",
       "no-use-before-define": "off",
       "no-param-reassign": "off",
-      "consistent-return": "off"
+      "consistent-return": "off",
+      "react/prop-types": "off"
     },
     "settings": {
       "import/resolver": {
