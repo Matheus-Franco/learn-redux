@@ -1,4 +1,4 @@
-import { IProduct } from './types';
+import { ActionTypes, IProduct } from './types';
 
 interface IReturnType {
   type: string;
@@ -16,7 +16,7 @@ interface IReturnTypeId {
 
 export function addProductToCartRequest(product: IProduct): IReturnType {
   return {
-    type: 'ADD_PRODUCT_TO_CART_REQUEST',
+    type: ActionTypes.addProductToCartRequest,
     payload: {
       product,
     },
@@ -25,7 +25,7 @@ export function addProductToCartRequest(product: IProduct): IReturnType {
 
 export function addProductToCartSuccess(product: IProduct): IReturnType {
   return {
-    type: 'ADD_PRODUCT_TO_CART_SUCCESS',
+    type: ActionTypes.addProductToCartSuccess,
     payload: {
       product,
     },
@@ -34,7 +34,7 @@ export function addProductToCartSuccess(product: IProduct): IReturnType {
 
 export function addProductToCartFailure(productId: number): IReturnTypeId {
   return {
-    type: 'ADD_PRODUCT_TO_CART_FAILURE',
+    type: ActionTypes.addProductToCartFailure,
     payload: {
       productId,
     },
