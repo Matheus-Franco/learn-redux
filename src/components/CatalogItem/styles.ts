@@ -9,29 +9,34 @@ export const Item = styled.div`
   width: 324px;
   height: 324px;
 
-  border: 1px solid blue;
-
   span {
-    background: #fff;
+    background: #fafafa;
     height: 70%;
+    padding: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   div {
     height: 15%;
-
-    display: flex;
-    justify-content: space-between;
+    background: #fafafa;
 
     p {
       font-weight: 500;
+      color: #000;
+
+      & + p {
+        margin-top: 4px;
+      }
     }
 
     .title {
-      font-size: 16px;
     }
 
     .price {
-      font-size: 20px;
     }
   }
 
@@ -45,5 +50,11 @@ export const Item = styled.div`
     border: none;
     outline: none;
     cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `;

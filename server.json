@@ -3,17 +3,20 @@
       {
         "id": 1,
         "title": "Casaco maneiro",
-        "price": 290.90
+        "price": 290.90,
+        "image": "https://www.hellyhansen.com/media/catalog/product/5/3/53316_344-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"
       },
       {
         "id": 2,
         "title": "Óculos barato",
-        "price": 20.90
+        "price": 20.90,
+        "image": "https://cache.mrporter.com/variants/images/3633577411939551/in/w2000_q80.jpg"
       },
       {
         "id": 3,
         "title": "Tênis da moda",
-        "price": 500.00
+        "price": 500,
+        "image": "https://i.pinimg.com/originals/28/81/6b/28816b15948a40de9e19ab86f040b719.jpg"
       }
     ],
     "stock": [

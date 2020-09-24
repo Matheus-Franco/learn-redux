@@ -25,26 +25,30 @@ const CatalogItem: React.FC<ICatalogItemProps> = ({ product }) => {
 
   return (
     <Container>
-      <Item>
-        <span>imagem</span>
+      <>
+        <Item>
+          <span>
+            <img src={product.image} alt="" />
+          </span>
 
-        <div>
-          <p className="title">{product.title}</p>
+          <div>
+            <p className="title">{product.title}</p>
 
-          <p className="price">
-            R$
-            {product.price}
-          </p>
-        </div>
+            <p className="price">
+              R$
+              {product.price}
+            </p>
+          </div>
 
-        <button type="button" onClick={handleAddProductToCart}>
-          Comprar
-        </button>
+          <button type="button" onClick={handleAddProductToCart}>
+            Comprar
+          </button>
+        </Item>
 
         {hasFailedStockCheck && (
           <span style={{ color: 'red' }}>Falta de Estoque</span>
         )}
-      </Item>
+      </>
     </Container>
   );
 };
