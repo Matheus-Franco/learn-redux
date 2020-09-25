@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { IState } from '../../store';
-import { ICartItem } from '../../store/modules/cart/types';
+import { ICartItem } from '../../store/modules/cart/state.d';
 
 import { Container } from './styles';
 

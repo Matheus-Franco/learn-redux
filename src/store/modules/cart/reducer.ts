@@ -1,11 +1,9 @@
 import { Reducer } from 'redux';
 import produce from 'immer';
-import { ActionTypes, ICartState } from './types';
 
-const INITIAL_STATE: ICartState = {
-  items: [],
-  failedStockCheck: [],
-};
+import { ICartState } from './state.d';
+import { ActionTypes } from './actions.d';
+import INITIAL_STATE from './state';
 
 const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
   return produce(state, draft => {

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { IState } from '../../store';
 
 import { addProductToCartRequest } from '../../store/modules/cart/actions';
-import { IProduct } from '../../store/modules/cart/types';
+import { IProduct } from '../../store/modules/cart/state.d';
 
 import { Container, Item } from './styles';
 

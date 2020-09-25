@@ -7,7 +7,7 @@ import {
   addProductToCartRequest,
   addProductToCartSuccess,
 } from './actions';
-import { ActionTypes } from './types';
+import { ActionTypes } from './actions.d';
 
 type ICheckProductStockRequest = ReturnType<typeof addProductToCartRequest>;
 

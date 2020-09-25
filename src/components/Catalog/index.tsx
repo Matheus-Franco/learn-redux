@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
-import { IProduct } from '../../store/modules/cart/types';
+import { IProduct } from '../../store/modules/cart/state.d';
 import CatalogItem from '../CatalogItem';
 
 import { Container } from './styles';

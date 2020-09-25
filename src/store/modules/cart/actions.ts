@@ -1,4 +1,5 @@
-import { ActionTypes, IProduct } from './types';
+import { IProduct } from './state.d';
+import { ActionTypes } from './actions.d';
 
 interface IReturnType {
   type: string;

@@ -23,6 +23,7 @@ export const Item = styled.div`
   div {
     height: 15%;
     background: #fafafa;
+    padding: 0 16px;
 
     p {
       font-weight: 500;
